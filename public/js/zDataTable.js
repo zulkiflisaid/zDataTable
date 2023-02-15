@@ -1,6 +1,6 @@
 import goTek from "./goTek.js";
 class zDataTable {
-		 
+	/*zDataTable v.1*/	 
 	constructor(id,config){ 
 		this.id =  id;  
 		this.container = config.container.querySelector('#'+id); //div tempat tabel   //untuk mempercepat node digunakan div parent
