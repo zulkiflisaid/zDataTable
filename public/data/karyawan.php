@@ -3,8 +3,8 @@
 	
 	header("Content-Type: application/json; charset=UTF-8");
 
-	sleep(1);//melihat animasi loading
-
+	sleep(0);//melihat animasi loading
+        //sleep(2);//melihat animasi loading
 	 
 	$servername = "localhost";
 	$username = "root";
