@@ -1,0 +1,107 @@
+
+/*
+	Portions of this content are ©2022–2023 by individual www.goteknologi.com contributors. Content available under a Creative Commons license.
+	
+*/
+
+ztable..prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.ztable > .p-t {
+    padding-top: 8px;
+}
+ 
+input[type=search]::-webkit-search-cancel-button {
+    -webkit-appearance: searchfield-cancel-button;
+}
+
+.paging.shine {
+     background: #f6f7f8;
+  opacity:0.7;
+  background-image: linear-gradient(to right, #f6f7f8 0%,  #edeef1 20%, #f6f7f8 40%,  #f6f7f8 80%,  #f6f7f8 100%);
+  background-repeat: no-repeat;
+  
+  display: inline-block; 
+  
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards; 
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: placeholderShimmer;
+  -webkit-animation-timing-function: linear;  
+  }
+
+.ztable > .paging  > div {
+  display: inline-flex; 
+  justify-content: center;
+  align-items: center; 
+  width: 100%; 
+  height: 100%; 
+  font-size:20px;
+  font-weight: bold;
+}
+
+.ztable > .paging  { 
+	position:absolute;
+	top:0px;
+	bottom:0px;
+	right:0px;
+	left:0px;
+	margin:auto; 
+}
+th.ztable-th-sort { 
+	padding-right: 18px;
+	position: relative;
+	 cursor: pointer;
+}
+th.ztable-th-sort:before,
+th.ztable-th-sort:after {
+	border: 4px solid transparent;
+	content: "";
+	display: block;
+	height: 0;
+	right: 5px;
+	top: 50%;
+	position: absolute;
+	width: 0;
+}
+th.ztable-th:before {
+	border-bottom-color: #bbb;
+	margin-top: -9px;
+}
+th.ztable-th:after {
+	border-top-color: #bbb;
+	margin-top: 1px;
+}
+
+/*sort asc */
+th.ztable-th-asc:before {
+	border-bottom-color: #000;
+	margin-top: -9px; 
+}
+th.ztable-th-asc:after {
+	border-top-color: #bbb;
+	margin-top: 1px;
+
+/*sort desc*/ 
+th.ztable-th-desc:before {
+	border-bottom-color: #bbb;
+	margin-top: -9px;
+}
+th.ztable-th-desc:after {
+	border-top-color: #000;
+	margin-top: 1px;
+}
+
+@-webkit-keyframes placeholderShimmer {
+  0% {
+    background-position: -1068px 0;
+  }
+  
+  100% {
+    background-position: 1068px 0; 
+  }
+}
+
