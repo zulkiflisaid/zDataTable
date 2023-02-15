@@ -9,8 +9,8 @@
 	$servername = "localhost";
 	$username = "root";
 	$password = "";
-	$dbname = "quasar_pos";
-	$port = 33068;
+	$dbname = "zdatatable";
+	$port = 3306;
 
 	  $data=array();  
  
